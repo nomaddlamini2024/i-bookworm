@@ -1,0 +1,194 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+       background-image:url("images/image6_big_image.webp");
+    background-size: cover; /* This ensures the image covers the entire page */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    background-attachment: fixed; /* This keeps the background image fixed during scroll */
+    background-position: center; /* This centers the image */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Header styling */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+
+  /* Navigation bar styling */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+    position: relative; /* Needed for dropdown */
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  nav ul li .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  nav ul li .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  nav ul li:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Headings styling */
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+
+  /* Section styling */
+  section {
+    margin: 20px 0;
+    padding: 10px;
+  }
+
+  /* Image gallery styling */
+  .image-gallery {
+    display: flex;
+    gap: 10px;
+  }
+
+  .image-item {
+    position: relative;
+  }
+
+  .image-gallery img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .save-for-later, .like-item {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+  }
+
+  .like-item {
+    left: auto;
+    right: 10px;
+  }
+
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  form label {
+    font-size: 1em;
+  }
+
+  form input,
+  form textarea {
+    padding: 5px;
+    font-size: 1em;
+  }
+
+  /* Blockquote styling */
+  blockquote {
+    background-color: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+  }
+
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+
+  th,
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+
+  /* Block styling */
+  .block {
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+
+  /* Paragraph and unordered list styling */
+  p,
+  ul {
+    color: white;
+  }
+
+  /* Footer styling */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+  }
+
+  /* Specific styling for Save for Later page */
+  #saved-items-list p {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+  }
+
+  #saved-items-list {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
