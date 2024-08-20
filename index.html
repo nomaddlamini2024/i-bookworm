@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>i-bookworm Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to i-bookworm Website</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="save_for_later.html">Save for Later</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">More</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="block">
+      <h2>Gallery</h2>
+      <div class="image-gallery">
+        <div class="image-item">
+          <img src="images/image1.webp" alt="Image 1">
+          <button class="save-for-later" data-item="Image 1">Save</button>
+          <button class="like-item" data-item="Image 1">Like</button>
+        </div>
+        <div class="image-item">
+          <img src="images/image2.webp" alt="Image 2">
+          <button class="save-for-later" data-item="Image 2">Save</button>
+          <button class="like-item" data-item="Image 2">Like</button>
+        </div>
+        <div class="image-item">
+            <img src="images/image3.webp" alt="Image 3">
+            <button class="save-for-later" data-item="Image 3">Save</button>
+            <button class="like-item" data-item="Image 3">Like</button>
+        </div>
+        <div class="image-item">
+            <img src="images/image4.webp" alt="Image 4">
+            <button class="save-for-later" data-item="Image 4">Save </button>
+            <button class="like-item" data-item="Image 4">Like</button>
+        </div>
+        <div class="image-item">
+            <img src="images/image5.webp" alt="Image 5">
+            <button class="save-for-later" data-item="Image 5">Save </button>
+            <button class="like-item" data-item="Image 5">Like</button>
+        </div>
+        <!-- Repeat for other images -->
+      </div>
+    </section>
+    <section class="block">
+      <h2>Subscribe to Our Bookworms United Newsletter</h2>
+      <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div>
+          <p>What types of content would you like to receive?</p>
+          <input type="text" id="theme" name="content" value="theme">
+          <label for="theme">Theme</label>
+          <input type="text" id="story" name="content" value="story">
+          <label for="story">Story</label>
+        </div>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <section>
+      <h2>Testimonial</h2>
+      <blockquote>
+        This is a testimonial from a satisfied customer. "i-bookworm
+        Bookworms United has reignited my passion for reading with
+        recommendations and discussions. I've found new authors and friends.
+        Anna Boleyn."
+      </blockquote>
+    </section>
+    <section class="block">
+      <h3>Useful Links</h3>
+      <ul>
+        <li><a href="https://www.barnesandnoble.com/b/the-new-york-times-bestsellers/_/N-1p3n">External Link</a></li>
+        <li><a href="mailto:i-bookworminfo@example.com">Email Us</a></li>
+      </ul>
+    </section>
+    <section class="block">
+      <h2>i-bookworm Table</h2>
+      <table>
+        <tr>
+          <th>Number of Satisfied Bookworms 1</th>
+          <th>Number of Virtual Book Clubs 2</th>
+        </tr>
+        <tr>
+          <td>Past year 72 1</td>
+          <td>Past year 18 2</td>
+        </tr>
+        <tr>
+          <td>Past 2 years 35 3</td>
+          <td>Past 2 years 9 4</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 i-bookworm Website</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
